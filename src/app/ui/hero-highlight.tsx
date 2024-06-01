@@ -1,5 +1,5 @@
 "use client";
-import { cn } from "../../../utils/cn";
+import { cn } from "../utils/cn";
 import { useMotionValue, motion, useMotionTemplate } from "framer-motion";
 import React from "react";
 
@@ -7,10 +7,12 @@ export const HeroHighlight = ({
   children,
   className,
   containerClassName,
+  heroSection = false,
 }: {
   children: React.ReactNode;
   className?: string;
   containerClassName?: string;
+  heroSection?: boolean;
 }) => {
   let mouseX = useMotionValue(0);
   let mouseY = useMotionValue(0);
@@ -29,7 +31,9 @@ export const HeroHighlight = ({
   return (
     <div
       className={cn(
-        "relative h-[40rem] flex items-center bg-black justify-center w-full group",
+        `relative flex items-center bg-black justify-center w-full group ${
+          heroSection ? "h-[40rem]" : "py-[2rem]"
+        }`,
         containerClassName
       )}
       onMouseMove={handleMouseMove}
