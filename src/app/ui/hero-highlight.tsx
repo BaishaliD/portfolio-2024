@@ -2,6 +2,7 @@
 import { cn } from "../utils/cn";
 import { useMotionValue, motion, useMotionTemplate } from "framer-motion";
 import React from "react";
+import Contact from "../components/contact";
 
 export const HeroHighlight = ({
   children,
@@ -60,6 +61,12 @@ export const HeroHighlight = ({
       />
 
       <div className={cn("relative z-20", className)}>{children}</div>
+      {/* <button className="absolute bottom-0 p-8 text-zinc-200 z-10 hover:scale-105 transition-transform m-auto">
+        <span className="border border-indigo-500 py-2 px-4 rounded-full text-base">
+          Download Resume
+        </span>
+      </button> */}
+      <Contact />
     </div>
   );
 };
