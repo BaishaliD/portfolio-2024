@@ -3,6 +3,7 @@ import HeroSection from "./sections/hero-section";
 import AboutMeSection from "./sections/about-me-section";
 import SkillsSection from "./sections/skills-section";
 import ProjectSection from "./sections/projects-section";
+import ExperienceSection from "./sections/experience-section";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <AboutMeSection />
       <SkillsSection />
       <ProjectSection />
+      <ExperienceSection />
     </div>
   );
 }

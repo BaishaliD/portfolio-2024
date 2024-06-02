@@ -8,12 +8,16 @@ import ProductivityThumbnail from "../assets/productivity-thumbnail.png";
 import Button from "../components/button";
 import GithubLogo from "../assets/icons/github-mark-white.svg";
 import Arrow from "../assets/icons/arrow.svg";
+import SectionHeader from "../components/section-header";
 
 function ProjectSection() {
   return (
-    <div className="h-[1200px] md:h-[900px] w-full md:w-3/4 mx-auto">
-      <LayoutGrid cards={cards} />
-    </div>
+    <>
+      <SectionHeader title={"Projects"} />
+      <div className="h-[1200px] md:h-[900px] w-full md:w-3/4 mx-auto mt-12">
+        <LayoutGrid cards={cards} />
+      </div>
+    </>
   );
 }
 
