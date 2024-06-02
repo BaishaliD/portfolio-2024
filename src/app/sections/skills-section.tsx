@@ -29,12 +29,12 @@ const SKILLS = [
     image:
       "https://banner2.cleanpng.com/20190120/wqk/kisspng-socket-io-javascript-express-js-react-logo-5c452f6410dd60.1342776015480379880691.jpg",
   },
-  {
-    label: "Webpack",
-    url: "https://webpack.js.org/",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHo9vJGHMtB9aqSBaElF_Sdp2R-87t1UUZuA&s",
-  },
+  // {
+  //   label: "Webpack",
+  //   url: "https://webpack.js.org/",
+  //   image:
+  //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHo9vJGHMtB9aqSBaElF_Sdp2R-87t1UUZuA&s",
+  // },
   {
     label: "Tailwind CSS",
     url: "https://tailwindcss.com/",
@@ -42,18 +42,18 @@ const SKILLS = [
   },
   { label: "Material UI", url: "", image: "" },
   { label: "Framer Motion", url: "", image: "" },
-  {
-    label: "HTML5",
-    url: "https://www.w3.org/html/",
-    image:
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
-  },
-  {
-    label: "CSS3",
-    url: "https://www.w3schools.com/css/",
-    image:
-      "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
-  },
+  // {
+  //   label: "HTML5",
+  //   url: "https://www.w3.org/html/",
+  //   image:
+  //     "https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg",
+  // },
+  // {
+  //   label: "CSS3",
+  //   url: "https://www.w3schools.com/css/",
+  //   image:
+  //     "https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg",
+  // },
   {
     label: "Chart.js",
     url: "https://www.chartjs.org",
@@ -70,16 +70,16 @@ const SKILLS = [
     image:
       "https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg",
   },
-  {
-    label: "Git",
-    url: "https://git-scm.com/",
-    image: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
-  },
-  {
-    label: "Figma",
-    url: "https://www.figma.com/",
-    image: "https://www.vectorlogo.zone/logos/figma/figma-icon.svg",
-  },
+  // {
+  //   label: "Git",
+  //   url: "https://git-scm.com/",
+  //   image: "https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg",
+  // },
+  // {
+  //   label: "Figma",
+  //   url: "https://www.figma.com/",
+  //   image: "https://www.vectorlogo.zone/logos/figma/figma-icon.svg",
+  // },
 ];
 
 function SkillItem({ label, url, image }) {

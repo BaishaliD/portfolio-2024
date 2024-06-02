@@ -59,6 +59,7 @@ const Skeleton = ({ title, description, github, url }) => {
           handleClick={() => {
             // router.push("project/cake-shop");
           }}
+          showChevron
         />
       </div>
     </div>
