@@ -1,9 +1,9 @@
 import React from "react";
 
-function Button({ label, handleClick }) {
+function Button({ label = "", handleClick }) {
   return (
     <button
-      className="bg-transparent no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-md md:text-lg font-normal leading-6  text-white inline-block"
+      className="bg-transparent no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-md md:text-lg font-thin leading-6  text-white inline-block"
       onClick={handleClick}
     >
       <span className="absolute inset-0 overflow-hidden rounded-full">

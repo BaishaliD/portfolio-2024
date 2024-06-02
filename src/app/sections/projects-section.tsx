@@ -6,6 +6,8 @@ import MobibattleThumbnail from "../assets/mobibattle-thumbnail.png";
 import SuperheroThumbnail from "../assets/superhero-hunter-thumbnail.png";
 import ProductivityThumbnail from "../assets/productivity-thumbnail.png";
 import Button from "../components/button";
+import GithubLogo from "../assets/icons/github-mark-white.svg";
+import Arrow from "../assets/icons/arrow.svg";
 
 function ProjectSection() {
   return (
@@ -22,17 +24,36 @@ const Skeleton = ({ title, description, github, url }) => {
       <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
         {description}
       </p>
-      <div className="flex gap-4 my-8">
+      <div className="flex items-center gap-4 my-8">
+        {github && (
+          <img
+            src={GithubLogo}
+            height={30}
+            width={30}
+            onClick={() => {
+              window.open(github, "_blank");
+            }}
+            className="cursor-pointer hover:scale-110 transition-transform"
+          />
+        )}
+        {url && (
+          <div className="border border-slate-200 rounded-full h-[30px] w-[30px] flex justify-center items-center cursor-pointer hover:scale-110 transition-transform">
+            <img
+              src={Arrow}
+              height={16}
+              width={16}
+              color="white"
+              onClick={() => {
+                window.open(url, "_blank");
+              }}
+            />
+          </div>
+        )}
+
         <Button
-          label="Live Link"
+          label="Read more"
           handleClick={() => {
-            window.open(url, "_blank");
-          }}
-        />
-        <Button
-          label="Github"
-          handleClick={() => {
-            window.open(github, "_blank");
+            // router.push("project/cake-shop");
           }}
         />
       </div>
@@ -65,7 +86,7 @@ const cards = [
           " A house by the river is a place of peace and tranquility. perfect place to relax, unwind, and enjoy life."
         }
         github=""
-        url=""
+        url="https://mobibattle.com/"
       />
     ),
     className: "col-span-12 md:col-span-5",
@@ -79,8 +100,8 @@ const cards = [
         description={
           " A house by the river is a place of peace and tranquility. perfect place to relax, unwind, and enjoy life."
         }
-        github=""
-        url=""
+        github="https://github.com/BaishaliD/SuperheroHunter"
+        url="https://baishalid.github.io/SuperheroHunter/"
       />
     ),
     className: "col-span-12 md:col-span-5",
@@ -94,7 +115,7 @@ const cards = [
         description={
           " A house by the river is a place of peace and tranquility. perfect place to relax, unwind, and enjoy life."
         }
-        github=""
+        github="https://github.com/BaishaliD/productivity"
         url=""
       />
     ),

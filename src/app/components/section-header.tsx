@@ -3,14 +3,14 @@ import React from "react";
 import { motion } from "framer-motion";
 // import { cn } from "../utils/cn";
 
-function SectionHeader({ title }) {
+function SectionHeader({ title, slideDown = false }) {
   return (
     <div className="z-30 relative">
       <motion.h1
-        initial={{ opacity: 0, y: -100 }}
+        initial={slideDown ? { opacity: 0, y: -100 } : { opacity: 0, y: 0 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
-          delay: 0.5,
+          delay: slideDown ? 0.5 : 0.1,
           duration: 2,
           ease: "easeInOut",
         }}
@@ -20,7 +20,11 @@ function SectionHeader({ title }) {
         {title}
       </motion.h1>
       <motion.div
-        initial={{ width: "6rem", opacity: 0, y: -100 }}
+        initial={
+          slideDown
+            ? { width: "6rem", opacity: 0, y: -100 }
+            : { width: "6rem", opacity: 0, y: 0 }
+        }
         whileInView={{ width: "10rem", opacity: 1, y: 0 }}
         transition={{
           delay: 0.5,

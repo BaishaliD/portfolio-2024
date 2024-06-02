@@ -42,7 +42,12 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
             )}
             layout
           >
-            {selected?.id === card.id && <SelectedCard selected={selected} />}
+            {selected?.id === card.id && (
+              <SelectedCard
+                selected={selected}
+                handleOutsideClick={handleOutsideClick}
+              />
+            )}
             <BlurImage card={card} />
           </motion.div>
         </div>
@@ -76,7 +81,13 @@ const BlurImage = ({ card }: { card: Card }) => {
   );
 };
 
-const SelectedCard = ({ selected }: { selected: Card | null }) => {
+const SelectedCard = ({
+  selected,
+  handleOutsideClick,
+}: {
+  selected: Card | null;
+  handleOutsideClick: any;
+}) => {
   return (
     <div
       className="h-full w-full flex flex-col justify-end rounded-lg shadow-2xl relative z-[60]"
@@ -85,6 +96,28 @@ const SelectedCard = ({ selected }: { selected: Card | null }) => {
           "linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 1))",
       }}
     >
+      <button
+        className="absolute top-8 right-8 z-[70]"
+        onClick={(e) => {
+          e.stopPropagation();
+          handleOutsideClick();
+        }}
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          className="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 18 18 6M6 6l12 12"
+          />
+        </svg>
+      </button>
       <motion.div
         initial={{
           opacity: 0,

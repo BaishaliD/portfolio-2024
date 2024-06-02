@@ -1,3 +1,4 @@
+"use client";
 import SectionHeader from "../components/section-header";
 import SkillCard from "../components/skill-card";
 import { Boxes } from "../ui/background-boxes";

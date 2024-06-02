@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 function Prose({ text }) {
   return (
     <div className="my-4">
-      <div className="text-sm md:text-lg lg:text-xl prose prose-sm text-slate-300 text-justify font-extralight">
+      <div className="text-sm md:text-base lg:text-lg prose prose-sm text-slate-300 text-justify font-extralight">
         {text}
       </div>
     </div>
