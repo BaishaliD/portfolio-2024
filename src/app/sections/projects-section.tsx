@@ -22,7 +22,7 @@ function ProjectSection() {
   );
 }
 
-const Skeleton = ({ title, description, github, url }) => {
+const Skeleton = ({ title, description, github, url, route = null }) => {
   return (
     <div>
       <p className="font-bold text-4xl text-white">{title}</p>
@@ -55,9 +55,11 @@ const Skeleton = ({ title, description, github, url }) => {
           </div>
         )}
 
-        <Link href={"/project/cake-shop"}>
-          <Button label="Read more" showChevron />
-        </Link>
+        {route && (
+          <Link href={"/project" + route}>
+            <Button label="Read more" showChevron />
+          </Link>
+        )}
       </div>
     </div>
   );
@@ -74,6 +76,7 @@ const cards = [
         }
         url="https://cake-shop-2022.web.app/"
         github="https://github.com/BaishaliD/cake-shop"
+        route="/cake-shop"
       />
     ),
     className: "col-span-12 md:col-span-7",
@@ -89,6 +92,7 @@ const cards = [
         }
         github=""
         url="https://mobibattle.com/"
+        route="/mobibattle"
       />
     ),
     className: "col-span-12 md:col-span-5",
@@ -104,6 +108,7 @@ const cards = [
         }
         github="https://github.com/BaishaliD/SuperheroHunter"
         url="https://baishalid.github.io/SuperheroHunter/"
+        route="/superhero-hunter"
       />
     ),
     className: "col-span-12 md:col-span-5",
