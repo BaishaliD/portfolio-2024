@@ -9,6 +9,7 @@ import Button from "../components/button";
 import GithubLogo from "../assets/icons/github-mark-white.svg";
 import Arrow from "../assets/icons/arrow.svg";
 import SectionHeader from "../components/section-header";
+import Link from "next/link";
 
 function ProjectSection() {
   return (
@@ -54,13 +55,9 @@ const Skeleton = ({ title, description, github, url }) => {
           </div>
         )}
 
-        <Button
-          label="Read more"
-          handleClick={() => {
-            // router.push("project/cake-shop");
-          }}
-          showChevron
-        />
+        <Link href={"/project/cake-shop"}>
+          <Button label="Read more" showChevron />
+        </Link>
       </div>
     </div>
   );
@@ -73,7 +70,7 @@ const cards = [
       <Skeleton
         title={"The Cake Bar & Co."}
         description={
-          " A house by the river is a place of peace and tranquility. perfect place to relax, unwind, and enjoy life."
+          "A full-stack e-commerce website for a cake shop featuring a stunning UI, built with React and Firebase, offering user registration, product management, and engaging animations."
         }
         url="https://cake-shop-2022.web.app/"
         github="https://github.com/BaishaliD/cake-shop"

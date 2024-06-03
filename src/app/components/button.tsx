@@ -2,14 +2,18 @@ import React from "react";
 
 function Button({
   label = "",
-  handleClick,
+  handleClick = null,
   showChevron = false,
   padding = "lg",
 }) {
   return (
     <button
       className="bg-transparent no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-md md:text-lg font-thin leading-6  text-white inline-block"
-      onClick={handleClick}
+      onClick={() => {
+        if (typeof handleClick === "function") {
+          handleClick();
+        }
+      }}
     >
       <span className="absolute inset-0 overflow-hidden rounded-full">
         <span className="absolute inset-0 rounded-full bg-[image:radial-gradient(75%_100%_at_50%_0%,rgba(56,189,248,0.6)_0%,rgba(56,189,248,0)_75%)] opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
