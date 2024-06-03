@@ -1,10 +1,10 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import { LayoutGrid } from "../ui/layout-grid";
-import CakeShopThumbnail from "../assets/cake-shop-thumbnail.png";
-import MobibattleThumbnail from "../assets/mobibattle-thumbnail.png";
-import SuperheroThumbnail from "../assets/superhero-hunter-thumbnail.png";
-import ProductivityThumbnail from "../assets/productivity-thumbnail.png";
+import CakeShopThumbnail from "../assets/thumbnails/cake-shop-thumbnail.png";
+import MobibattleThumbnail from "../assets/thumbnails/mobibattle-thumbnail.png";
+import SuperheroThumbnail from "../assets/thumbnails/superhero-hunter-thumbnail.png";
+import ProductivityThumbnail from "../assets/thumbnails/productivity-thumbnail.png";
 import Button from "../components/button";
 import GithubLogo from "../assets/icons/github-mark-white.svg";
 import Arrow from "../assets/icons/arrow.svg";

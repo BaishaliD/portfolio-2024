@@ -3,10 +3,10 @@ import React from "react";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { TracingBeam } from "../../ui/tracing-beams";
-import CakeShopThumbnail from "../../assets/cake-shop-thumbnail.png";
-import MobibattleThumbnail from "../../assets/mobibattle-thumbnail.png";
-import SuperheroThumbnail from "../../assets/superhero-hunter-thumbnail.png";
-import ProductivityThumbnail from "../../assets/productivity-thumbnail.png";
+import CakeShopThumbnail from "../../assets/thumbnails/cake-shop-thumbnail.png";
+import MobibattleThumbnail from "../../assets/thumbnails/mobibattle-thumbnail.png";
+import SuperheroThumbnail from "../../assets/thumbnails/superhero-hunter-thumbnail.png";
+import ProductivityThumbnail from "../../assets/thumbnails/productivity-thumbnail.png";
 
 function ProjectInfoPage() {
   const { id } = useParams();
@@ -16,19 +16,15 @@ function ProjectInfoPage() {
       <div className="max-w-2xl mx-auto antialiased pt-4 relative">
         {dummyContent.map((item, index) => (
           <div key={`content-${index}`} className="mb-10">
-            <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
-              {item.badge}
-            </h2>
-
             <p className="text-xl mb-4">{item.title}</p>
 
-            <div className="text-sm  prose prose-sm dark:prose-invert">
+            <div className="text-lg  prose prose-sm dark:prose-invert">
               {item?.image && (
                 <Image
                   src={item.image}
                   alt="blog thumbnail"
-                  height="1000"
-                  width="1000"
+                  height="300"
+                  width="300"
                   className="rounded-lg mb-10 object-cover"
                 />
               )}
@@ -42,57 +38,13 @@ function ProjectInfoPage() {
 }
 
 const dummyContent = [
-  // {
-  //   title: "Lorem Ipsum Dolor Sit Amet",
-  //   description: (
-  //     <>
-  //       <p>
-  //         Sit duis est minim proident non nisi velit non consectetur. Esse
-  //         adipisicing laboris consectetur enim ipsum reprehenderit eu deserunt
-  //         Lorem ut aliqua anim do. Duis cupidatat qui irure cupidatat incididunt
-  //         incididunt enim magna id est qui sunt fugiat. Laboris do duis pariatur
-  //         fugiat Lorem aute sit ullamco. Qui deserunt non reprehenderit dolore
-  //         nisi velit exercitation Lorem qui do enim culpa. Aliqua eiusmod in
-  //         occaecat reprehenderit laborum nostrud fugiat voluptate do Lorem culpa
-  //         officia sint labore. Tempor consectetur excepteur ut fugiat veniam
-  //         commodo et labore dolore commodo pariatur.
-  //       </p>
-  //       <p>
-  //         Dolor minim irure ut Lorem proident. Ipsum do pariatur est ad ad
-  //         veniam in commodo id reprehenderit adipisicing. Proident duis
-  //         exercitation ad quis ex cupidatat cupidatat occaecat adipisicing.
-  //       </p>
-  //       <p>
-  //         Tempor quis dolor veniam quis dolor. Sit reprehenderit eiusmod
-  //         reprehenderit deserunt amet laborum consequat adipisicing officia qui
-  //         irure id sint adipisicing. Adipisicing fugiat aliqua nulla nostrud.
-  //         Amet culpa officia aliquip deserunt veniam deserunt officia
-  //         adipisicing aliquip proident officia sunt.
-  //       </p>
-  //     </>
-  //   ),
-  //   badge: "React",
-  //   image: CakeShopThumbnail,
-  // },
   {
     title: "Lorem Ipsum Dolor Sit Amet",
     description: (
-      <>
-        <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
-        </p>
-        <p>
-          In dolore veniam excepteur eu est et sunt velit. Ipsum sint esse
-          veniam fugiat esse qui sint ad sunt reprehenderit do qui proident
-          reprehenderit. Laborum exercitation aliqua reprehenderit ea sint
-          cillum ut mollit.
-        </p>
-      </>
+      <p>
+        The Cake Bar & Co. is a personal project I embarked on to delve into
+        full-stack development.
+      </p>
     ),
     badge: "Changelog",
     image: CakeShopThumbnail,
@@ -102,12 +54,54 @@ const dummyContent = [
     description: (
       <>
         <p>
-          Ex irure dolore veniam ex velit non aute nisi labore ipsum occaecat
-          deserunt cupidatat aute. Enim cillum dolor et nulla sunt exercitation
-          non voluptate qui aliquip esse tempor. Ullamco ut sunt consectetur
-          sint qui qui do do qui do. Labore laborum culpa magna reprehenderit ea
-          velit id esse adipisicing deserunt amet dolore. Ipsum occaecat veniam
-          commodo proident aliqua id ad deserunt dolor aliquip duis veniam sunt.
+          For the frontend, I concentrated on creating an attractive UI with all
+          the essential functionalities of an e-commerce website. Built with
+          React, the frontend emphasizes a visually appealing and eye-catching
+          design.
+        </p>
+      </>
+    ),
+    badge: "Launch Week",
+    image: SuperheroThumbnail,
+  },
+  {
+    title: "Lorem Ipsum Dolor Sit Amet",
+    description: (
+      <>
+        <p>
+          A standout aspect of this project was experimenting with Framer
+          Motion, where I learned many basics and integrated engaging
+          animations. I designed the entire UI using Figma for wireframing.
+        </p>
+      </>
+    ),
+    badge: "Launch Week",
+    image: SuperheroThumbnail,
+  },
+  {
+    title: "Lorem Ipsum Dolor Sit Amet",
+    description: (
+      <>
+        <p>
+          For the backend, I utilized Firebase, a Backend-as-a-Service (BAAS)
+          solution that perfectly suited this project. Firebase allowed me to
+          handle CRUD operations, authentication, and asset management
+          efficiently.
+        </p>
+      </>
+    ),
+    badge: "Launch Week",
+    image: SuperheroThumbnail,
+  },
+  {
+    title: "Lorem Ipsum Dolor Sit Amet",
+    description: (
+      <>
+        <p>
+          The major features include an animated landing page, user registration
+          with email and SSO with Google, product listing, add to cart,
+          wishlist, checkout functionality, customer reviews, product search and
+          filter, and handling image upload and storage.
         </p>
       </>
     ),
