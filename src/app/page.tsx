@@ -35,6 +35,8 @@ function App() {
           experienceRef.current.scrollIntoView({ behavior: "smooth" });
         }
         break;
+      case "Resume":
+        window.open(RESUME_DRIVE_LINK, "_blank");
     }
   };
 
