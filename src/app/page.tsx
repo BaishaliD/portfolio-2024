@@ -9,11 +9,13 @@ import Tabs from "./components/tabs";
 import { useRef } from "react";
 import Button from "./components/button";
 import { motion } from "framer-motion";
+import { isMobile } from "./utils/deviceDetect";
 
 const RESUME_DRIVE_LINK =
   "https://drive.google.com/file/d/1MoBYV4rgh_FRbijyUyx8yE9h05hROq0_/view?usp=sharing";
 
 function App() {
+  const mobile = isMobile();
   const skillsRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
   const experienceRef = useRef<HTMLDivElement>(null);
@@ -70,10 +72,10 @@ function App() {
           </span>
         </motion.button>
       </div>
-      <HeroSection />
+      <HeroSection isMobile={mobile} />
       <AboutMeSection />
       <div ref={skillsRef}>
-        <SkillsSection />
+        <SkillsSection isMobile={isMobile} />
       </div>
       <div ref={projectsRef}>
         <ProjectSection />
