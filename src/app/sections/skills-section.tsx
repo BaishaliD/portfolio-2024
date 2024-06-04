@@ -103,9 +103,7 @@ function SkillsSection({ isMobile }: { isMobile: boolean }) {
   if (isMobile) {
     return (
       <div>
-        <div className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-xl font-medium tracking-tight text-transparent md:text-2xl">
-          Skills
-        </div>
+        <SectionHeader title={"Skills"} />
         <div className="flex gap-8 w-4/5 md:w-3/4 flex-wrap mx-auto justify-center mt-20">
           {SKILLS.map((skill) => (
             <SkillCard {...skill} />

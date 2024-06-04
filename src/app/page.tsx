@@ -77,9 +77,9 @@ function App() {
       <div ref={skillsRef}>
         <SkillsSection isMobile={mobile} />
       </div>
-      <div ref={projectsRef}>
+      {/* <div ref={projectsRef}>
         <ProjectSection />
-      </div>
+      </div> */}
       <div ref={experienceRef}>
         <ExperienceSection />
       </div>

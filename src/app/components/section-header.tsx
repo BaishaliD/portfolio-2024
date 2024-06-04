@@ -1,9 +1,19 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
+import { isMobile } from "../utils/deviceDetect";
 // import { cn } from "../utils/cn";
 
 function SectionHeader({ title = "", slideDown = false }) {
+  const mobile = isMobile();
+
+  if (mobile) {
+    return (
+      <div className="mt-8 bg-gradient-to-br from-slate-300 to-slate-500 py-4 bg-clip-text text-center text-xl font-medium tracking-tight text-transparent md:text-2xl">
+        {title}
+      </div>
+    );
+  }
   return (
     <div className="z-30 relative">
       <motion.h1
