@@ -35,7 +35,7 @@ export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
               card.className,
               "relative overflow-hidden cursor-pointer",
               selected?.id === card.id
-                ? "rounded-lg cursor-auto absolute inset-0 h-1/2 w-full md:w-1/2 m-auto z-50 flex justify-center items-center flex-wrap flex-col"
+                ? "rounded-none md:rounded-lg cursor-auto fixed top-0 left-0 md:absolute inset-0 h-auto md:h-1/2 w-full md:w-1/2 m-0 md:m-auto z-50 flex justify-center items-center flex-wrap flex-col"
                 : lastSelected?.id === card.id
                 ? "z-40 bg-white rounded-xl h-full w-full"
                 : "bg-white rounded-xl h-full w-full"

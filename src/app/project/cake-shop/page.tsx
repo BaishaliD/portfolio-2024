@@ -8,16 +8,15 @@ import Image3 from "../../assets/projects/cake-shop/landing-page-3.png";
 import Image4 from "../../assets/projects/cake-shop/product.png";
 import Image5 from "../../assets/projects/cake-shop/wedding-cakes.png";
 import Prose from "@/app/components/prose";
+import ProjectTitle from "../../components/project-title";
+import Back from "../../assets/icons/back-arrow.svg";
 
 function CakeShop() {
   return (
     <>
-      <div className="text-4xl mx-auto my-20 text-center">
-        The Cake Bar & Co.
-        <div className="h-1 w-[30%] bg-gradient-to-r from-indigo-500 to-purple-500 text-center mx-auto mt-4"></div>
-      </div>
+      <ProjectTitle title={"The Cake Bar & Co."} />
       <TracingBeam className="px-6 text-white mb-32">
-        <div className="mx-auto antialiased pt-4 relative">
+        <div className="mx-auto ml-4 antialiased pt-4 relative">
           <Prose
             text={
               "The Cake Bar & Co. is a personal project I embarked on to delve into full-stack development."
@@ -32,16 +31,16 @@ function CakeShop() {
             wrapperClass="my-8"
           />
 
-          <div className="grid grid-cols-12 gap-x-6 my-16">
+          <div className="grid grid-cols-12 gap-6 my-16">
             <Image
               src={Image1}
               alt="blog thumbnail"
-              className="col-span-7 rounded-lg object-cover inset-0 h-[250px]"
+              className="col-span-12 md:col-span-7 rounded-lg object-cover inset-0 h-[250px]"
             />
             <Image
               src={Image2}
               alt="blog thumbnail"
-              className="col-span-5 rounded-lg object-cover inset-0 h-[250px]"
+              className="col-span-12 md:col-span-5 rounded-lg object-cover inset-0 h-[250px]"
             />
           </div>
           <Prose
@@ -70,17 +69,17 @@ function CakeShop() {
             <Image
               src={Image3}
               alt="blog thumbnail"
-              className="col-span-5 rounded-lg object-cover inset-0 h-[300px]"
+              className="col-span-12 md:col-span-5 rounded-lg object-cover inset-0 h-[300px]"
             />
             <Image
               src={Image4}
               alt="blog thumbnail"
-              className="col-span-7 rounded-lg object-cover inset-0 h-[300px]"
+              className="col-span-12 md:col-span-7 rounded-lg object-cover inset-0 h-[300px]"
             />
             <Image
               src={Image5}
               alt="blog thumbnail"
-              className="col-start-3 col-span-8 rounded-lg object-cover inset-0 h-[350px]"
+              className="md:col-start-3 col-span-12 md:col-span-8 rounded-lg object-cover inset-0 h-[350px]"
             />
           </div>
         </div>

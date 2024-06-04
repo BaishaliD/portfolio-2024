@@ -88,7 +88,7 @@ const cards = [
       <Skeleton
         title={"Mobibattle"}
         description={
-          " A house by the river is a place of peace and tranquility. perfect place to relax, unwind, and enjoy life."
+          "A competitive gaming platform where users engage in 2-player games and tournaments, with real-time scoring and wallet integration. Built with React, Tailwind CSS, Socket.io."
         }
         github=""
         url="https://mobibattle.com/"
@@ -104,7 +104,7 @@ const cards = [
       <Skeleton
         title={"Superhero Hunter"}
         description={
-          " A house by the river is a place of peace and tranquility. perfect place to relax, unwind, and enjoy life."
+          "A website built in HTML, Vanilla CSS and Vanilla JS, allowing users to explore and favorite characters from DC and Marvel Comics, featuring real-time search suggestions and sleek UI design."
         }
         github="https://github.com/BaishaliD/SuperheroHunter"
         url="https://baishalid.github.io/SuperheroHunter/"

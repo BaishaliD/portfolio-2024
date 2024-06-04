@@ -38,7 +38,7 @@ function Tabs({ smoothScroll }) {
 function Tab({ section, smoothScroll, hideInMd }) {
   return (
     <div
-      className={`pb-1 px-1 border-b border-slate-500 cursor-pointer ${
+      className={`pb-1 px-1 border-b border-slate-500 cursor-pointer text-white ${
         hideInMd ? "block md:hidden" : "block"
       }`}
       onClick={() => smoothScroll(section)}

@@ -9,19 +9,16 @@ import Image4 from "../../assets/projects/mobibattle/mb-recharge.png";
 import Image5 from "../../assets/projects/mobibattle/mb-matching.png";
 import Image6 from "../../assets/projects/mobibattle/mb-game.png";
 import Image7 from "../../assets/projects/mobibattle/mb-leaderboard.png";
-
 import Prose from "@/app/components/prose";
+import ProjectTitle from "@/app/components/project-title";
 
 function Mobibattle() {
   return (
     <>
-      <div className="text-4xl mx-auto my-20 text-center">
-        Mobibattle
-        <div className="h-1 w-[30%] bg-gradient-to-r from-indigo-500 to-purple-500 text-center mx-auto mt-4"></div>
-      </div>
+      <ProjectTitle title={"Mobibattle"} />
       <TracingBeam className="px-6 text-white mb-32">
-        <div className="mx-auto antialiased pt-4 relative">
-          <div className="text-xl mb-8">What is Mobibattle?</div>
+        <div className="mx-auto ml-4 antialiased pt-4 relative">
+          <div className="text-xl mb-8 mt-4">What is Mobibattle?</div>
           <Prose
             text={
               "Mobibattle is a competitive gaming platform that I developed while working at BlackNGreen. It offers an engaging environment where users participate in 2-player games for rewards. This project is special to me, as I started it from scratch and took it to production, learning the basics of developing a new project and overcoming challenges related to optimization, responsiveness, cross-browser compatibility, and localization."
@@ -43,21 +40,21 @@ function Mobibattle() {
             wrapperClass="my-8"
           />
 
-          <div className="grid grid-cols-12 gap-x-6 my-16">
+          <div className="grid grid-cols-12 gap-6 my-16">
             <Image
               src={Image1}
               alt="blog thumbnail"
-              className="col-start-2 col-span-3 rounded-lg object-cover inset-0 "
+              className="col-span-6 md:col-start-2 md:col-span-3 rounded-lg object-cover inset-0 "
             />
             <Image
               src={Image2}
               alt="blog thumbnail"
-              className="col-span-3 rounded-lg object-cover inset-0 "
+              className="col-span-6 md:col-span-3 rounded-lg object-cover inset-0 "
             />
             <Image
               src={Image3}
               alt="blog thumbnail"
-              className="col-span-3 rounded-lg object-cover inset-0 "
+              className="col-start-4 col-span-6 md:col-span-3 rounded-lg object-cover inset-0 "
             />
           </div>
           <div className="text-xl mb-8">My role in Mobibattle</div>
@@ -95,22 +92,22 @@ function Mobibattle() {
             <Image
               src={Image4}
               alt="blog thumbnail"
-              className="col-span-3 rounded-lg object-cover inset-0 "
+              className="col-span-6 md:col-span-3 rounded-lg object-cover inset-0 "
             />
             <Image
               src={Image5}
               alt="blog thumbnail"
-              className="col-span-3 rounded-lg object-cover inset-0 "
+              className="col-span-6 md:col-span-3 rounded-lg object-cover inset-0 "
             />
             <Image
               src={Image6}
               alt="blog thumbnail"
-              className="col-span-3 rounded-lg object-cover inset-0 "
+              className="col-span-6 md:col-span-3 rounded-lg object-cover inset-0 "
             />
             <Image
               src={Image7}
               alt="blog thumbnail"
-              className="col-span-3 rounded-lg object-cover inset-0 "
+              className="col-span-6 md:col-span-3 rounded-lg object-cover inset-0 "
             />
           </div>
           <Prose

@@ -7,16 +7,14 @@ import Image2 from "../../assets/projects/superhero/superhero-search.png";
 import Image3 from "../../assets/projects/superhero/superhero-info.png";
 import Image4 from "../../assets/projects/superhero/superhero-fav.png";
 import Prose from "@/app/components/prose";
+import ProjectTitle from "@/app/components/project-title";
 
 function SuperheroHunter() {
   return (
     <>
-      <div className="text-4xl mx-auto my-20 text-center">
-        Superhero Hunter
-        <div className="h-1 w-[30%] bg-gradient-to-r from-indigo-500 to-purple-500 text-center mx-auto mt-4"></div>
-      </div>
+      <ProjectTitle title={"Superhero Hunter"} />
       <TracingBeam className="px-6 text-white mb-32">
-        <div className="mx-auto antialiased pt-4 relative">
+        <div className="mx-auto ml-4 antialiased pt-4 relative">
           <Prose
             text={
               "Superhero Hunter is a simple project where user gets a search interface to search for their favourite superhero from the DC and Marvel universe. It displays detailed information about the characters and lets users add their favorite characters to a Favourites list for easy access."
@@ -38,16 +36,16 @@ function SuperheroHunter() {
             wrapperClass="my-8"
           />
 
-          <div className="grid grid-cols-2 gap-x-6 my-16">
+          <div className="grid grid-cols-2 gap-6 my-16">
             <Image
               src={Image1}
               alt="blog thumbnail"
-              className="col-span-1 rounded-lg object-cover inset-0 h-[250px]"
+              className="col-span-2 md:col-span-1 rounded-lg object-cover inset-0 h-[250px] border border-slate-300"
             />
             <Image
               src={Image2}
               alt="blog thumbnail"
-              className="col-span-1 rounded-lg object-cover inset-0 h-[250px]"
+              className="col-span-2 md:col-span-1 rounded-lg object-cover inset-0 h-[250px] border border-slate-300"
             />
           </div>
           <Prose
@@ -88,16 +86,16 @@ function SuperheroHunter() {
             wrapperClass="my-8"
           />
 
-          <div className="grid grid-cols-2 gap-x-6 my-16">
+          <div className="grid grid-cols-2 gap-6 my-16">
             <Image
               src={Image3}
               alt="blog thumbnail"
-              className="col-span-1 rounded-lg object-cover inset-0 h-[250px]"
+              className="col-span-2 md:col-span-1 rounded-lg object-cover inset-0 h-[250px] border border-slate-300"
             />
             <Image
               src={Image4}
               alt="blog thumbnail"
-              className="col-span-1 rounded-lg object-cover inset-0 h-[250px]"
+              className="col-span-2 md:col-span-1 rounded-lg object-cover inset-0 h-[250px] border border-slate-300"
             />
           </div>
 

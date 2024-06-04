@@ -10,6 +10,9 @@ import { useRef } from "react";
 import Button from "./components/button";
 import { motion } from "framer-motion";
 
+const RESUME_DRIVE_LINK =
+  "https://drive.google.com/file/d/1MoBYV4rgh_FRbijyUyx8yE9h05hROq0_/view?usp=sharing";
+
 function App() {
   const skillsRef = useRef();
   const projectsRef = useRef();
@@ -55,8 +58,13 @@ function App() {
           viewport={{ once: true }}
           className="absolute right-0 p-8 text-zinc-200 z-10 hover:scale-105 transition-transform"
         >
-          <span className="border border-indigo-500 py-2 px-4 rounded-full">
-            Download Resume
+          <span
+            className="border border-indigo-500 py-2 px-4 rounded-full"
+            onClick={() => {
+              window.open(RESUME_DRIVE_LINK, "_blank");
+            }}
+          >
+            View Resume
           </span>
         </motion.button>
       </div>
