@@ -6,7 +6,7 @@ const TABS = [
   { section: "Resume", hideInMd: true },
 ];
 
-function Tabs({ smoothScroll }) {
+function Tabs({ smoothScroll }: { smoothScroll: (param: string) => void }) {
   return (
     <motion.div
       initial={{
@@ -35,7 +35,15 @@ function Tabs({ smoothScroll }) {
   );
 }
 
-function Tab({ section, smoothScroll, hideInMd }) {
+function Tab({
+  section,
+  smoothScroll,
+  hideInMd,
+}: {
+  section: string;
+  smoothScroll: (param: string) => void;
+  hideInMd: boolean;
+}) {
   return (
     <div
       className={`pb-1 px-1 border-b border-slate-500 cursor-pointer text-white ${

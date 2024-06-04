@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Back from "../assets/icons/back-arrow.svg";
 
-function ProjectTitle({ title }) {
+function ProjectTitle({ title }: { title: string }) {
   return (
     <div className="flex items-center sticky md:static w-full top-0 left-0 bg-slate-900 md:bg-black z-[9999] p-4 mb-8">
       <Link href={"/"}>

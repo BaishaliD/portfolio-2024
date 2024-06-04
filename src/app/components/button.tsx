@@ -2,7 +2,7 @@ import React from "react";
 
 function Button({
   label = "",
-  handleClick = null,
+  handleClick = () => {},
   showChevron = false,
   padding = "lg",
 }) {

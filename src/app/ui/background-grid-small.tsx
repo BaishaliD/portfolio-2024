@@ -1,4 +1,4 @@
-function BackgroundGridSmall({ children }) {
+function BackgroundGridSmall({ children }: { children: React.ReactNode }) {
   return (
     <div className="w-full pb-20 dark:bg-black bg-white  dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2] relative">
       {/* Radial gradient for the container to give a faded look */}

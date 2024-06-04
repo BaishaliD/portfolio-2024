@@ -58,7 +58,17 @@ function ExperienceSection() {
   );
 }
 
-function TimelineItem({ title, company, duration, description }) {
+function TimelineItem({
+  title,
+  company,
+  duration,
+  description,
+}: {
+  title: string;
+  company: string;
+  duration: string;
+  description: string[];
+}) {
   return (
     <div className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-gradient-to-b from-indigo-700 to-purple-500">
       <h3 className="text-xl font-semibold tracking-wide">{title}</h3>

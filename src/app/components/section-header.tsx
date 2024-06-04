@@ -3,7 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 // import { cn } from "../utils/cn";
 
-function SectionHeader({ title, slideDown = false }) {
+function SectionHeader({ title = "", slideDown = false }) {
   return (
     <div className="z-30 relative">
       <motion.h1

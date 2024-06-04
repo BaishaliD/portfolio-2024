@@ -82,7 +82,15 @@ const SKILLS = [
   // },
 ];
 
-function SkillItem({ label, url, image }) {
+function SkillItem({
+  label,
+  url,
+  image,
+}: {
+  label: string;
+  url?: string;
+  image: string;
+}) {
   return (
     <div className="border border-slate-600 p-4 md:text-2xl text-lg text-white relative z-20 flex flex-col justify-center items-center">
       <img src={image} alt={label} height={60} width={60} />

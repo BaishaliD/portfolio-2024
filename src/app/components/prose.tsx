@@ -3,7 +3,15 @@ import React from "react";
 import { motion } from "framer-motion";
 // import { cn } from "../utils/cn";
 
-function Prose({ text, wrapperClass = "", size = "normal" }) {
+function Prose({
+  text,
+  wrapperClass = "",
+  size = "normal",
+}: {
+  text: string | React.ReactNode;
+  wrapperClass?: string;
+  size?: string;
+}) {
   return (
     <div className={wrapperClass}>
       <div

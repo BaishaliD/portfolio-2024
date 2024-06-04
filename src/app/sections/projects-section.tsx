@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
-import { LayoutGrid } from "../ui/layout-grid";
+import { Card, LayoutGrid } from "../ui/layout-grid";
 import CakeShopThumbnail from "../assets/thumbnails/cake-shop-thumbnail.png";
 import MobibattleThumbnail from "../assets/thumbnails/mobibattle-thumbnail.png";
 import SuperheroThumbnail from "../assets/thumbnails/superhero-hunter-thumbnail.png";
@@ -22,7 +22,19 @@ function ProjectSection() {
   );
 }
 
-const Skeleton = ({ title, description, github, url, route = null }) => {
+const Skeleton = ({
+  title,
+  description,
+  github,
+  url,
+  route = null,
+}: {
+  title: string;
+  description: string;
+  github: string;
+  url: string;
+  route?: null | string;
+}) => {
   return (
     <div>
       <p className="font-bold text-4xl text-white">{title}</p>
@@ -65,7 +77,7 @@ const Skeleton = ({ title, description, github, url, route = null }) => {
   );
 };
 
-const cards = [
+const cards: Card[] = [
   {
     id: 1,
     content: (

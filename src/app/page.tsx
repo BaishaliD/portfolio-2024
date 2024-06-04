@@ -14,11 +14,11 @@ const RESUME_DRIVE_LINK =
   "https://drive.google.com/file/d/1MoBYV4rgh_FRbijyUyx8yE9h05hROq0_/view?usp=sharing";
 
 function App() {
-  const skillsRef = useRef();
-  const projectsRef = useRef();
-  const experienceRef = useRef();
+  const skillsRef = useRef<HTMLDivElement>(null);
+  const projectsRef = useRef<HTMLDivElement>(null);
+  const experienceRef = useRef<HTMLDivElement>(null);
 
-  const smoothScroll = (section) => {
+  const smoothScroll = (section: string) => {
     switch (section) {
       case "Skills":
         if (skillsRef.current) {

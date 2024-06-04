@@ -2,13 +2,13 @@
 import React, { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
 import { cn } from "../utils/cn";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
-type Card = {
+export type Card = {
   id: number;
   content: JSX.Element | React.ReactNode | string;
   className: string;
-  thumbnail: string;
+  thumbnail: string | StaticImageData;
 };
 
 export const LayoutGrid = ({ cards }: { cards: Card[] }) => {
