@@ -75,7 +75,7 @@ function App() {
       <HeroSection isMobile={mobile} />
       <AboutMeSection />
       <div ref={skillsRef}>
-        <SkillsSection isMobile={isMobile} />
+        <SkillsSection isMobile={mobile} />
       </div>
       <div ref={projectsRef}>
         <ProjectSection />
