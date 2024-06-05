@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Boxes } from "../ui/background-boxes";
-import { cn } from "../utils/cn";
-import Button from "../components/button";
+import { cn } from "../../utils/cn";
+import Button from "../../components/mobile/button";
+import SectionHeader from "@/app/components/mobile/section-header";
 
 const LINEKDIN_URL = "https://www.linkedin.com/in/baishali-datta-84a06375/";
 const LINEKDIN_TEXT = "linkedin.com/in/baishali-datta-84a06375";
@@ -33,10 +33,7 @@ function ContactMeSection() {
     <div>
       <div className="py-36 relative w-full overflow-hidden bg-black flex flex-col items-center justify-center rounded-lg">
         <div className="absolute inset-0 w-full h-full bg-black z-20 [mask-image:radial-gradient(transparent,white)] pointer-events-none" />
-        <Boxes />
-        <h1 className={cn("md:text-4xl text-xl text-slate-200 relative z-20")}>
-          Let's connect
-        </h1>
+        <SectionHeader title="Let's Connect" />
         <div className="relative z-20 flex flex-col gap-8 mt-12 items-center">
           <Button
             label={"LinkedIn : " + LINEKDIN_TEXT}

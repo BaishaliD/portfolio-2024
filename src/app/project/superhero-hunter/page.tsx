@@ -13,7 +13,7 @@ function SuperheroHunter() {
   return (
     <>
       <ProjectTitle title={"Superhero Hunter"} />
-      <TracingBeam className="px-6 text-white mb-32">
+      <TracingBeam className="px-6 text-slate-200 mb-32">
         <div className="mx-auto ml-4 antialiased pt-4 relative">
           <Prose
             text={

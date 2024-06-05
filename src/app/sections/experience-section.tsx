@@ -1,6 +1,7 @@
 import React from "react";
 import SectionHeader from "../components/section-header";
 import Prose from "../components/prose";
+import SectionHeaderMobile from "../components/mobile/section-header";
 
 const EXPERIENCES = [
   {
@@ -37,13 +38,17 @@ const EXPERIENCES = [
   },
 ];
 
-function ExperienceSection() {
+function ExperienceSection({ mobile = false }) {
   return (
     <div>
       <section className="dark:text-slate-200">
-        <div className="container max-w-5xl px-4 py-12 mx-auto">
+        <div className="container max-w-5xl p-4 mx-auto">
           <div className="">
-            <SectionHeader title={"Work Experience"} />
+            {mobile ? (
+              <SectionHeaderMobile title={"Work Experience"} />
+            ) : (
+              <SectionHeader title={"Work Experience"} />
+            )}
             <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9 mt-16">
               <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:dark:bg-slate-700">
                 {EXPERIENCES.map((experience) => (
@@ -79,7 +84,7 @@ function TimelineItem({
         {duration}
       </time>
       {description.map((text) => (
-        // <p className="mt-3 text-sm md:text-base lg:text-md prose prose-sm text-slate-300 text-justify font-extralight">
+        // <p className="mt-3 text-sm md:text-base lg:text-md prose prose-sm text-slate-200 text-justify font-extralight">
         //   {item}
         // </p>
         <Prose text={text} wrapperClass={"my-2"} />

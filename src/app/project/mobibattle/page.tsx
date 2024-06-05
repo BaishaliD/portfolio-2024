@@ -16,7 +16,7 @@ function Mobibattle() {
   return (
     <>
       <ProjectTitle title={"Mobibattle"} />
-      <TracingBeam className="px-6 text-white mb-32">
+      <TracingBeam className="px-6 text-slate-200 mb-32">
         <div className="mx-auto ml-4 antialiased pt-4 relative">
           <div className="text-xl mb-8 mt-4">What is Mobibattle?</div>
           <Prose

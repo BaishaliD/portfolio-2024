@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 const TABS = [
   { section: "Skills", hideInMd: false },
   { section: "Projects", hideInMd: false },
@@ -8,22 +7,7 @@ const TABS = [
 
 function Tabs({ smoothScroll }: { smoothScroll: (param: string) => void }) {
   return (
-    <motion.div
-      initial={{
-        opacity: 0,
-        top: 20,
-      }}
-      animate={{
-        opacity: 1,
-        top: 0,
-      }}
-      transition={{
-        duration: 0.5,
-        ease: [0.4, 0.0, 0.2, 1],
-      }}
-      viewport={{ once: true }}
-      className="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 flex p-8 gap-8 z-10"
-    >
+    <div className="absolute top-0 left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 flex p-8 gap-4 z-10">
       {TABS.map((tab) => (
         <Tab
           section={tab.section}
@@ -31,7 +15,7 @@ function Tabs({ smoothScroll }: { smoothScroll: (param: string) => void }) {
           hideInMd={tab.hideInMd}
         />
       ))}
-    </motion.div>
+    </div>
   );
 }
 

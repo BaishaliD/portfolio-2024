@@ -22,7 +22,7 @@ function ProjectSection() {
   );
 }
 
-const Skeleton = ({
+export const Skeleton = ({
   title,
   description,
   github,
@@ -37,8 +37,8 @@ const Skeleton = ({
 }) => {
   return (
     <div>
-      <p className="font-bold text-4xl text-white">{title}</p>
-      <p className="font-normal text-base my-4 max-w-lg text-neutral-200">
+      <p className="font-bold text-2xl md:text-4xl text-slate-200">{title}</p>
+      <p className="font-normal text-base my-4 max-w-lg text-slate-200">
         {description}
       </p>
       <div className="flex items-center gap-4 my-8">
@@ -77,7 +77,7 @@ const Skeleton = ({
   );
 };
 
-const cards: Card[] = [
+export const cards: Card[] = [
   {
     id: 1,
     content: (

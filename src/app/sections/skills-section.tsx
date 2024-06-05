@@ -4,7 +4,7 @@ import SkillCard from "../components/skill-card";
 import { Boxes } from "../ui/background-boxes";
 import BackgroundGridSmall from "../ui/background-grid-small";
 
-const SKILLS = [
+export const SKILLS = [
   {
     label: "React",
     url: "https://reactjs.org/",
@@ -92,26 +92,14 @@ function SkillItem({
   image: string;
 }) {
   return (
-    <div className="border border-slate-600 p-4 md:text-2xl text-lg text-white relative z-20 flex flex-col justify-center items-center">
+    <div className="border border-slate-600 p-4 md:text-2xl text-lg text-slate-200 relative z-20 flex flex-col justify-center items-center">
       <img src={image} alt={label} height={60} width={60} />
       {label}
     </div>
   );
 }
 
-function SkillsSection({ isMobile }: { isMobile: boolean }) {
-  if (isMobile) {
-    return (
-      <div>
-        <SectionHeader title={"Skills"} />
-        <div className="flex gap-8 w-4/5 md:w-3/4 flex-wrap mx-auto justify-center mt-20">
-          {SKILLS.map((skill) => (
-            <SkillCard {...skill} />
-          ))}
-        </div>
-      </div>
-    );
-  }
+function SkillsSection() {
   return (
     <div className="">
       <BackgroundGridSmall>

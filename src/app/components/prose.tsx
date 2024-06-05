@@ -19,7 +19,7 @@ function Prose({
           size === "large"
             ? "text-md md:text-lg lg:text-xl"
             : "text-sm md:text-base lg:text-md"
-        } prose prose-sm text-slate-300 text-justify font-extralight`}
+        } prose prose-sm text-slate-200 text-justify font-extralight`}
       >
         {text}
       </div>
