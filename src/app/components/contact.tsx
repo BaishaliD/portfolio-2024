@@ -31,7 +31,7 @@ function Contact() {
 
   return (
     <>
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 md:left-12 md:translate-x-0 z-20 flex items-center gap-6">
+      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-6">
         <div
           className="cursor-pointer"
           onClick={() => {
