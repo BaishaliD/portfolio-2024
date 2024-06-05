@@ -43,7 +43,7 @@ function App() {
     }
   };
 
-  if (true) {
+  if (mobile) {
     return <MobilePage />;
   }
 
