@@ -132,10 +132,10 @@ export const cards: Card[] = [
       <Skeleton
         title={"Productivity Buddy"}
         description={
-          " A house by the river is a place of peace and tranquility. perfect place to relax, unwind, and enjoy life."
+          "A website designed to boost productivity with features like a Goal of the Day section, Pomodoro timer, to-do list, and reading list. I took on this project to dive deep into animations using Framer Motion. It is still a work in progress."
         }
         github="https://github.com/BaishaliD/productivity"
-        url=""
+        url="https://productivity-buddy.vercel.app/"
       />
     ),
     className: "col-span-12 md:col-span-7",
