@@ -8,7 +8,7 @@ function Button({
 }) {
   return (
     <button
-      className="bg-transparent no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-md md:text-lg font-thin leading-6  text-slate-200 inline-block"
+      className="bg-transparent no-underline group cursor-pointer relative shadow-2xl shadow-zinc-900 rounded-full p-px text-md md:text-lg font-light leading-6  text-slate-200 inline-block"
       onClick={() => {
         if (typeof handleClick === "function") {
           handleClick();

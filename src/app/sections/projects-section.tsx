@@ -24,12 +24,14 @@ function ProjectSection() {
 
 export const Skeleton = ({
   title,
+  subtitle,
   description,
   github,
   url,
   route = null,
 }: {
   title: string;
+  subtitle: string;
   description: string;
   github: string;
   url: string;
@@ -38,6 +40,9 @@ export const Skeleton = ({
   return (
     <div>
       <p className="font-bold text-2xl md:text-4xl text-slate-200">{title}</p>
+      <p className="font-light text-sm md:text-base text-slate-200">
+        {subtitle}
+      </p>
       <p className="font-normal text-base my-4 max-w-lg text-slate-200">
         {description}
       </p>
@@ -83,6 +88,7 @@ export const cards: Card[] = [
     content: (
       <Skeleton
         title={"The Cake Bar & Co."}
+        subtitle="Personal project"
         description={
           "A full-stack e-commerce website for a cake shop featuring a stunning UI, built with React and Firebase, offering user registration, product management, and engaging animations."
         }
@@ -99,6 +105,7 @@ export const cards: Card[] = [
     content: (
       <Skeleton
         title={"Mobibattle"}
+        subtitle="Created at BlackNGreen"
         description={
           "A competitive gaming platform where users engage in 2-player games and tournaments, with real-time scoring and wallet integration. Built with React, Tailwind CSS, Socket.io."
         }
@@ -115,6 +122,7 @@ export const cards: Card[] = [
     content: (
       <Skeleton
         title={"Superhero Hunter"}
+        subtitle="Personal project"
         description={
           "A website built in HTML, Vanilla CSS and Vanilla JS, allowing users to explore and favorite characters from DC and Marvel Comics, featuring real-time search suggestions and sleek UI design."
         }
@@ -131,6 +139,7 @@ export const cards: Card[] = [
     content: (
       <Skeleton
         title={"Productivity Buddy"}
+        subtitle="Personal project"
         description={
           "A website designed to boost productivity with features like a Goal of the Day section, Pomodoro timer, to-do list, and reading list. I took on this project to dive deep into animations using Framer Motion. Note: This website is not responsive as of now. Please view on a desktop or laptop. It is still a work in progress."
         }
