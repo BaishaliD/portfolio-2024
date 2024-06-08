@@ -14,7 +14,7 @@ function HeroSection() {
           Frontend Engineer
         </div>
       </div>
-      <div className="text-ms md:text-base lg:text-md font-normal">
+      <div className="text-sm md:text-base lg:text-md font-normal">
         Crafting delightful web experiences with creativity and passion
       </div>
       <Contact />
