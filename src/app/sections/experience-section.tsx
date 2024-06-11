@@ -16,7 +16,7 @@ const EXPERIENCES = [
   },
   {
     title: "Software Engineer (Frontend)",
-    company: "BlackNGreen (BNG Advacned Mobile SOlutions Pvt. Ltd.)",
+    company: "BlackNGreen (BNG Advanced Mobile SOlutions Pvt. Ltd.)",
     duration: "Feb 2021 - Dec 2023",
     description: [
       "Developed a highly optimized, responsive UI for an online multiplayer gaming platform using React, Tailwind CSS, and Socket.io, tailored for bandwidth-challenged regions. The application is live in 7 countries.",
