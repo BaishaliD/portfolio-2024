@@ -19,7 +19,7 @@ const EXPERIENCES = [
     company: "BlackNGreen (BNG Advacned Mobile SOlutions Pvt. Ltd.)",
     duration: "Feb 2021 - Dec 2023",
     description: [
-      "Developed a highly optimized, responsive web UI for an online multiplayer gaming platform using React, Tailwind CSS, and Socket.io, tailored for bandwidth-challenged regions. The application is live in 7 countries.",
+      "Developed a highly optimized, responsive UI for an online multiplayer gaming platform using React, Tailwind CSS, and Socket.io, tailored for bandwidth-challenged regions. The application is live in 7 countries.",
       "Created a server-driven UI for a Customer Value Management system (SAAS application) to manage campaigns and customer lifecycles.",
       "Developed and optimized a gaming engine based on NodeJS and Socket.io, supporting user interactions and bot functionality.",
       "Upgraded a multipage quiz portal to a single-page React application deployed in 8 countries, increasing conversion rates by 40%. Integrated Google Analytics to track user metrics.",
