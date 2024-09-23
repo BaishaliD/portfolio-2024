@@ -15,7 +15,7 @@ const EXPERIENCES = [
   {
     title: "Senior Software Engineer (Frontend)",
     company: "FabHotels",
-    duration: "Dec 2023 - Aug 2023",
+    duration: "Dec 2023 - Aug 2024",
     description: [
       "Leading the end-to-end development of a new B2C product from scratch.",
       "Gathering business and functional requirements, creating proof of concepts, and leading UI development.",
