@@ -22,7 +22,7 @@ function AboutMeSection() {
       >
         <div className="w-full md:w-2/3">
           <Prose
-            text="Hey there! I'm Baishali, a frontend engineer with a unique journey
+            text="Hey there! I'm Baishali, a frontend engineer currently working at Flipkart. I had a unique journey
           from the depths of theoretical physics to the fast-paced world of web
           development. While I hold a Master's degree in Physics, I found my
           true passion in coding, where I can create tangible solutions that

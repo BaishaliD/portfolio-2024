@@ -5,9 +5,17 @@ import SectionHeaderMobile from "../components/mobile/section-header";
 
 const EXPERIENCES = [
   {
+    title: "UI Engineer 2",
+    company: "Flipkart",
+    duration: "Aug 2023 - Present",
+    description: [
+      "Working on the Flipkart Marketplace side, which deals with the services and websites used by Flipkart sellers to track and manage their listings and inventory.",
+    ],
+  },
+  {
     title: "Senior Software Engineer (Frontend)",
     company: "FabHotels",
-    duration: "Dec 2023 - Present",
+    duration: "Dec 2023 - Aug 2023",
     description: [
       "Leading the end-to-end development of a new B2C product from scratch.",
       "Gathering business and functional requirements, creating proof of concepts, and leading UI development.",
@@ -83,12 +91,13 @@ function TimelineItem({
       <time className="text-xs tracking-wide uppercase dark:text-slate-400 my-2">
         {duration}
       </time>
-      {description.map((text) => (
-        // <p className="mt-3 text-sm md:text-base lg:text-md prose prose-sm text-slate-200 text-justify font-extralight">
-        //   {item}
-        // </p>
-        <Prose text={text} wrapperClass={"my-2"} />
-      ))}
+      {description?.length > 0 &&
+        description.map((text) => (
+          // <p className="mt-3 text-sm md:text-base lg:text-md prose prose-sm text-slate-200 text-justify font-extralight">
+          //   {item}
+          // </p>
+          <Prose text={text} wrapperClass={"my-2"} />
+        ))}
     </div>
   );
 }
