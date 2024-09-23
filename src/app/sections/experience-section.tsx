@@ -7,7 +7,7 @@ const EXPERIENCES = [
   {
     title: "UI Engineer 2",
     company: "Flipkart",
-    duration: "Aug 2023 - Present",
+    duration: "Aug 2024 - Present",
     description: [
       "Working on the Flipkart Marketplace side, which deals with the services and websites used by Flipkart sellers to track and manage their listings and inventory.",
     ],
